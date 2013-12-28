@@ -64,8 +64,14 @@
                       }];
 
   [signUpActiveSignal subscribeNext:^(NSNumber *signupActive) {
-    self.signInButton.enabled = [signupActive boolValue];
-  }];
+     self.signInButton.enabled = [signupActive boolValue];
+   }];
+  
+  [[self.signInButton
+     rac_signalForControlEvents:UIControlEventTouchUpInside]
+     subscribeNext:^(id x) {
+       NSLog(@"button clicked");
+     }];
 
 }
 
