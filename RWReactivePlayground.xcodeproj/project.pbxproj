@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		721E122718698DC100B30134 /* kitten.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 721E122618698DC100B30134 /* kitten.jpg */; };
 		72A2881E18618A2E00DDD30A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A2881D18618A2E00DDD30A /* Foundation.framework */; };
 		72A2882018618A2E00DDD30A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A2881F18618A2E00DDD30A /* CoreGraphics.framework */; };
 		72A2882218618A2E00DDD30A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A2882118618A2E00DDD30A /* UIKit.framework */; };
@@ -19,8 +20,7 @@
 		72A2883D18618A2E00DDD30A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A2883C18618A2E00DDD30A /* XCTest.framework */; };
 		72A2883E18618A2E00DDD30A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A2881D18618A2E00DDD30A /* Foundation.framework */; };
 		72A2883F18618A2E00DDD30A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A2882118618A2E00DDD30A /* UIKit.framework */; };
-		72A2884718618A2E00DDD30A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 72A2884518618A2E00DDD30A /* InfoPlist.strings */; };
-		72A2884918618A2E00DDD30A /* RWReactivePlaygroundTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A2884818618A2E00DDD30A /* RWReactivePlaygroundTests.m */; };
+		72A2885418620EA100DDD30A /* RWDummySignInService.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A2885318620EA100DDD30A /* RWDummySignInService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		721E122618698DC100B30134 /* kitten.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kitten.jpg; sourceTree = "<group>"; };
 		72A2881A18618A2E00DDD30A /* RWReactivePlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RWReactivePlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A2881D18618A2E00DDD30A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		72A2881F18618A2E00DDD30A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -50,9 +51,8 @@
 		72A2883518618A2E00DDD30A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		72A2883B18618A2E00DDD30A /* RWReactivePlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RWReactivePlaygroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A2883C18618A2E00DDD30A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		72A2884418618A2E00DDD30A /* RWReactivePlaygroundTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RWReactivePlaygroundTests-Info.plist"; sourceTree = "<group>"; };
-		72A2884618618A2E00DDD30A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		72A2884818618A2E00DDD30A /* RWReactivePlaygroundTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RWReactivePlaygroundTests.m; sourceTree = "<group>"; };
+		72A2885218620EA100DDD30A /* RWDummySignInService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWDummySignInService.h; sourceTree = "<group>"; };
+		72A2885318620EA100DDD30A /* RWDummySignInService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWDummySignInService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +83,6 @@
 			isa = PBXGroup;
 			children = (
 				72A2882318618A2E00DDD30A /* RWReactivePlayground */,
-				72A2884218618A2E00DDD30A /* RWReactivePlaygroundTests */,
 				72A2881C18618A2E00DDD30A /* Frameworks */,
 				72A2881B18618A2E00DDD30A /* Products */,
 			);
@@ -112,6 +111,7 @@
 		72A2882318618A2E00DDD30A /* RWReactivePlayground */ = {
 			isa = PBXGroup;
 			children = (
+				721E122618698DC100B30134 /* kitten.jpg */,
 				72A2882C18618A2E00DDD30A /* RWAppDelegate.h */,
 				72A2882D18618A2E00DDD30A /* RWAppDelegate.m */,
 				72A2882F18618A2E00DDD30A /* Main.storyboard */,
@@ -119,6 +119,8 @@
 				72A2883318618A2E00DDD30A /* RWViewController.m */,
 				72A2883518618A2E00DDD30A /* Images.xcassets */,
 				72A2882418618A2E00DDD30A /* Supporting Files */,
+				72A2885218620EA100DDD30A /* RWDummySignInService.h */,
+				72A2885318620EA100DDD30A /* RWDummySignInService.m */,
 			);
 			path = RWReactivePlayground;
 			sourceTree = "<group>";
@@ -130,24 +132,6 @@
 				72A2882618618A2E00DDD30A /* InfoPlist.strings */,
 				72A2882918618A2E00DDD30A /* main.m */,
 				72A2882B18618A2E00DDD30A /* RWReactivePlayground-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		72A2884218618A2E00DDD30A /* RWReactivePlaygroundTests */ = {
-			isa = PBXGroup;
-			children = (
-				72A2884818618A2E00DDD30A /* RWReactivePlaygroundTests.m */,
-				72A2884318618A2E00DDD30A /* Supporting Files */,
-			);
-			path = RWReactivePlaygroundTests;
-			sourceTree = "<group>";
-		};
-		72A2884318618A2E00DDD30A /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				72A2884418618A2E00DDD30A /* RWReactivePlaygroundTests-Info.plist */,
-				72A2884518618A2E00DDD30A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -229,6 +213,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				721E122718698DC100B30134 /* kitten.jpg in Resources */,
 				72A2883618618A2E00DDD30A /* Images.xcassets in Resources */,
 				72A2882818618A2E00DDD30A /* InfoPlist.strings in Resources */,
 				72A2883118618A2E00DDD30A /* Main.storyboard in Resources */,
@@ -239,7 +224,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72A2884718618A2E00DDD30A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +237,7 @@
 				72A2882A18618A2E00DDD30A /* main.m in Sources */,
 				72A2883418618A2E00DDD30A /* RWViewController.m in Sources */,
 				72A2882E18618A2E00DDD30A /* RWAppDelegate.m in Sources */,
+				72A2885418620EA100DDD30A /* RWDummySignInService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +245,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72A2884918618A2E00DDD30A /* RWReactivePlaygroundTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,14 +273,6 @@
 				72A2883018618A2E00DDD30A /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		72A2884518618A2E00DDD30A /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				72A2884618618A2E00DDD30A /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -461,6 +437,7 @@
 				72A2884E18618A2E00DDD30A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		72A2884F18618A2E00DDD30A /* Build configuration list for PBXNativeTarget "RWReactivePlaygroundTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +446,7 @@
 				72A2885118618A2E00DDD30A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
